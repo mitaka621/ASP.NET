@@ -1,0 +1,18 @@
+﻿@{
+	ViewBag.Title = "Numbers from 1 to "+ViewBag.count;
+}
+<h1>Nums 1 to @ViewBag.count</h1>
+<ul>
+@{
+	for (int i = 1; i <= ViewBag.count; i++)
+	{
+		<li>@i</li>	
+	}
+}
+</ul>
+<input id="numInput" type="text" value="@ViewBag.count"/>
+<button onclick="GetNumber()" class="btn-primary">Submit</button>
+
+@section Scripts{
+	<script src="~/js/getNumber.js"></script>
+}

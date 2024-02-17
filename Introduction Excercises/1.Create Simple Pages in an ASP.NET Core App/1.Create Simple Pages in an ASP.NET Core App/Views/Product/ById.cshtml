@@ -1,0 +1,22 @@
+﻿@using _1.Create_Simple_Pages_in_an_ASP.NET_Core_App.Models.Product
+@model ProductViewModel
+@{
+	ViewBag.Title = "ById - " + Model.Id;
+}
+
+<table class="table">
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>@Model.Id</th>
+			<td>@Model.Name</td>
+			<td>@Model.Price lv</td>
+		</tr>
+	</tbody>
+</table>

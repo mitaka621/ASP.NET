@@ -1,0 +1,56 @@
+﻿@model List<ProductViewModel>
+@{
+	ViewBag.Title = "All products";
+}
+<div class="text-center">
+	<h1>Product List</h1>
+
+		<a asp-controller="Product" asp-action="AddProduct" class="btn btn-primary m-3">Add Product!</a>
+	@if (Model.Any())
+	{
+		<div class="row" style="justify-content:center">
+			@foreach (var product in Model)
+			{
+				<div class="col-sm-5">
+					<div class="card">
+						<div class="card-body">
+							<h3 class="card-title">@product.Name</h3>
+
+							@if (product.Notes.Any())
+							{
+								<p class="card-text">Notes:</p>
+								<div class="card" style="text-align:center">
+									<ul class="list-group list-group-flush">
+										@foreach (var note in product.Notes)
+										{
+											<li class="list-group-item">@note</li>
+										}
+									</ul>
+								</div>
+							}
+							else
+							{
+								<p class="text-danger">No Notes!</p>
+
+							}
+							<div>
+								<a asp-controller="Product" asp-action="AddNote" asp-route-id="@product.Id" class="btn btn-secondary m-3">AddNote</a>
+							</div>
+
+							<form class="mt-2" asp-controller="Product" asp-action="DeleteProduct" asp-route-id="@product.Id">
+								<a asp-controller="Product" asp-action="EditProduct" asp-route-id="@product.Id" class="btn btn-primary">Edit Product</a>
+								
+								<button class="btn btn-danger">Delete</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+
+	}
+	else
+	{
+		<p>No Products!</p>
+	}
+</div>

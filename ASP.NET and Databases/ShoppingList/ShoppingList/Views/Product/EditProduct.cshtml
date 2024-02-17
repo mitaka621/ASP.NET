@@ -1,0 +1,13 @@
+﻿@model ProductViewModel
+@{
+	ViewBag.Title = "Edit Product - "+Model.Name;
+}
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Product Name</label>
+        <input asp-for="Name" class="form-control" value="@Model.Name">
+        <span asp-validation-for="Name" class="small text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>

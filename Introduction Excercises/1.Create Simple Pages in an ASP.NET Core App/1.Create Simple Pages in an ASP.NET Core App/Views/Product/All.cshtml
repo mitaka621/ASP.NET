@@ -1,0 +1,29 @@
+﻿@using _1.Create_Simple_Pages_in_an_ASP.NET_Core_App.Models.Product
+@model IEnumerable<ProductViewModel>
+@{
+	ViewBag.Title = "All available products";
+}
+
+
+<table class="table">
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		@{
+			foreach (var product in Model)
+			{
+				<tr>
+					<th>@product.Id</th>
+					<td>@product.Name</td>
+					<td>@product.Price lv</td>
+				</tr>
+			}
+		}
+
+	</tbody>
+</table>

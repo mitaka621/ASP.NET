@@ -1,0 +1,13 @@
+﻿@model string
+@{
+	ViewBag.Title = "Add Note";
+}
+<form method="post" asp-action="AddNote">
+    <div class="mb-3">
+        <input name="id" value="@ViewBag.Id" type="hidden" />
+        <label  for="content" class="form-label">Content:</label>
+        <input  name="content" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
