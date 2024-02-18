@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PN5gaD3LQsn7gLlATX/mQ2InsDaQo67ZVvIRVBxSaPuHn+/gkBP+Hp6euKVt8h6BOPDhhUlZIyZsWarK/D+12A==",
+  "dgSpecHash": "bv3RHRZypMq6yP+stbGhKquzkg4dadXBW25HKJxIDfAVFrIKdjiqX2TsCiskpd9GWdNEyr0i+fwBVSdumW4YQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dimitar\\Documents\\GitHub\\ASP\\Exam preparation\\Homies\\Homies.csproj",
+  "projectFilePath": "C:\\Users\\Dimitar\\Documents\\GitHub\\ASP .NET\\ASP.NET\\Exam preparation\\Homies\\Homies.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dimitar\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Dimitar\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

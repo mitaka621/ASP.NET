@@ -11501,11 +11501,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dimitar\\Documents\\GitHub\\ASP\\Exam preparation\\Homies\\Homies.csproj",
+      "projectUniqueName": "C:\\Users\\Dimitar\\Documents\\GitHub\\ASP .NET\\ASP.NET\\Exam preparation\\Homies\\Homies.csproj",
       "projectName": "Homies",
-      "projectPath": "C:\\Users\\Dimitar\\Documents\\GitHub\\ASP\\Exam preparation\\Homies\\Homies.csproj",
+      "projectPath": "C:\\Users\\Dimitar\\Documents\\GitHub\\ASP .NET\\ASP.NET\\Exam preparation\\Homies\\Homies.csproj",
       "packagesPath": "C:\\Users\\Dimitar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dimitar\\Documents\\GitHub\\ASP\\Exam preparation\\Homies\\obj\\",
+      "outputPath": "C:\\Users\\Dimitar\\Documents\\GitHub\\ASP .NET\\ASP.NET\\Exam preparation\\Homies\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
